@@ -1,8 +1,13 @@
 import { render } from "@testing-library/react";
+import { Link } from "@/components/Link";
+import "jest-styled-components";
 
-import Home from "@/app/page";
+// test("it test props", () => {
+//   const tree = renderer.create(<Link />).toJSON();
+//   expect(tree).toHaveStyleRule("color", "red");
+// });
 
-it("renders homepage unchanged", () => {
-  const { container } = render(<Home />);
-  expect(container).toMatchSnapshot();
+test("it test props", () => {
+  const { container } = render(<Link />);
+  expect(container.firstChild).toHaveStyleRule("color", "red");
 });
