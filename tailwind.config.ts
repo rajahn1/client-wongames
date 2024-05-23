@@ -7,13 +7,6 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
-    fontWeight: {
-      bold: "600"
-    },
-    colors: {
-      white: "#FAFAFA",
-      black: "#030517"
-    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -26,7 +19,9 @@ const config: Config = {
         mainBg: "#06092B",
         lightGray: "#EAEAEA",
         gray: "#8F8F8F",
-        darkGray: "#2E2F42"
+        darkGray: "#2E2F42",
+        white: "#FAFAFA",
+        black: "#030517"
       },
       zIndex: {
         base: "10",
@@ -51,6 +46,9 @@ const config: Config = {
         large: "1.8rem",
         xlarge: "2.0rem",
         xxlarge: "2.8rem"
+      },
+      fontWeight: {
+        bold: "600"
       }
     }
   },

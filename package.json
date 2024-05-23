@@ -15,11 +15,9 @@
   },
   "dependencies": {
     "@vanilla-extract/css": "^1.15.1",
-    "jest-styled-components": "^7.2.0",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "styled-components": "^6.1.11",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
@@ -40,6 +38,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/react-test-renderer": "^18.3.0",
+    "@vanilla-extract/jest-transform": "^1.1.5",
     "@vanilla-extract/next-plugin": "^2.4.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
