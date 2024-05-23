@@ -1,8 +1,8 @@
-import { Teste } from "@/components/Test";
+import { Logo } from "@/components/Logo";
 export default function Home() {
   return (
     <div>
-      <Teste />
+      <Logo />
       <h2 className="text-xxlarge">Hello World</h2>
     </div>
   );
