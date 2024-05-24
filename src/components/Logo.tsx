@@ -1,6 +1,12 @@
-export const Logo = () => {
+import { themeClass } from "@/styles/theme.css";
+import { logoStyles } from "@/styles/logo.css";
+export type LogoProps = {
+  textColor?: "white" | "black";
+};
+
+export const Logo = ({ textColor }: LogoProps) => {
   return (
-    <div className="text-red-500">
+    <div className={`${themeClass} ${logoStyles[textColor ?? "black"]}`}>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 158 48">
         <path
           fill="url(#a)"
