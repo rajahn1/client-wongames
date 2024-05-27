@@ -1,26 +1,28 @@
 import { themeClass } from "@/styles/theme.css";
 import { logoStyles } from "@/styles/logo.css";
+
 export type LogoProps = {
   textColor?: "white" | "black";
 };
 
 export const Logo = ({ textColor }: LogoProps) => {
+  const colorStyle = logoStyles[textColor ?? "black"] || logoStyles.black;
   return (
-    <div className={`${themeClass} ${logoStyles[textColor ?? "black"]}`}>
+    <div className={`${themeClass} ${colorStyle}`}>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 158 48">
         <path
           fill="url(#a)"
           d="M.055 15.227.019 35.872c-.008 4.796 5.336 7.663 9.327 5.004l20.596-13.722L50.49 40.947c3.982 2.672 9.335-.176 9.344-4.972l.034-19.997c.014-7.882-7.549-13.565-15.116-11.361l-.873.254a50.875 50.875 0 0 1-29.358-.27C7.351 2.366.068 7.716.055 15.226Z"
         />
-        <path fill="#110F28" fill-opacity=".15" d="m30.163 27.16-6.033-4.292a.5.5 0 0 0-.782.494l1.293 7.298 5.523-3.5Z" />
+        <path fill="#110F28" fillOpacity=".15" d="m30.163 27.16-6.033-4.292a.5.5 0 0 0-.782.494l1.293 7.298 5.523-3.5Z" />
         <path
           stroke="#fff"
-          stroke-linecap="round"
-          stroke-opacity=".4"
-          stroke-width="1.5"
+          strokeLinecap="round"
+          strokeOpacity=".4"
+          strokeWidth="1.5"
           d="M7.592 7.103c-5.11 2.755-4.519 5-4.519 7.5M57.274 26.103v1M3.052 18.103v2M57.274 30.103v5"
         />
-        <path stroke="#0A0D27" stroke-linecap="round" stroke-width="2" d="M13.053 15.103v6M10.04 18.103h6.025" />
+        <path stroke="#0A0D27" strokeLinecap="round" strokeWidth="2" d="M13.053 15.103v6M10.04 18.103h6.025" />
         <ellipse cx="1.506" cy="1.5" fill="#0A0D27" rx="1.506" ry="1.5" transform="matrix(1 0 0 1 43.217 12.16)" />
         <ellipse cx="1.506" cy="1.5" fill="#0A0D27" rx="1.506" ry="1.5" transform="matrix(1 0 0 1 48.237 16.103)" />
         <ellipse cx="1.506" cy="1.5" fill="#0A0D27" rx="1.506" ry="1.5" transform="matrix(1 0 0 1 43.217 20.103)" />
@@ -31,9 +33,9 @@ export const Logo = ({ textColor }: LogoProps) => {
         />
         <defs>
           <linearGradient id="a" x1="29.159" x2="30.155" y1="-7.397" y2="49.103" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#FF5F5F" />
-            <stop offset="1" stop-color="#F062C0" />
-            <stop offset="1" stop-color="#F23131" />
+            <stop stopColor="#FF5F5F" />
+            <stop offset="1" stopColor="#F062C0" />
+            <stop offset="1" stopColor="#F23131" />
           </linearGradient>
         </defs>
       </svg>
