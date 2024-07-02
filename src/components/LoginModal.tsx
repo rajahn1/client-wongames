@@ -1,9 +1,8 @@
-import { themeClass } from "@/styles/theme.css";
 import { input, inputWrapperStyle, icons } from "@/styles/modalLogin.css";
 import { Button } from "./Button";
 
 export const LoginModal = () => (
-  <div className={`${themeClass} flex flex-col  gap-4 border-2`}>
+  <div className={`flex flex-col  gap-4 border-2`}>
     <div className="flex items-center gap-2">
       <svg width="7" height="31" viewBox="0 0 7 31" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="7" height="31" fill="#35BDAC" />

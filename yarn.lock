@@ -3106,6 +3106,13 @@
     modern-ahocorasick "^1.0.0"
     picocolors "^1.0.0"
 
+"@vanilla-extract/dynamic@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.npmjs.org/@vanilla-extract/dynamic/-/dynamic-2.1.1.tgz"
+  integrity sha512-iqf736036ujEIKsIq28UsBEMaLC2vR2DhwKyrG3NDb/fRy9qL9FKl1TqTtBV4daU30Uh3saeik4vRzN8bzQMbw==
+  dependencies:
+    "@vanilla-extract/private" "^1.0.5"
+
 "@vanilla-extract/integration@^7.1.5":
   version "7.1.5"
   resolved "https://registry.npmjs.org/@vanilla-extract/integration/-/integration-7.1.5.tgz"

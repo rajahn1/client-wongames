@@ -1,4 +1,3 @@
-import { themeClass } from "@/styles/theme.css";
 import { logoWrapperHideOnMobile, logoWrapperSizes, logoWrapperColors, logoSvgHideOnMobile } from "@/styles/logo.css";
 
 export type LogoProps = {
@@ -9,7 +8,7 @@ export type LogoProps = {
 
 export const Logo = ({ textColor, size, hideText = false }: LogoProps) => {
   return (
-    <div className={`${themeClass} ${logoWrapperColors[textColor ?? "black"]} ${logoWrapperSizes[size ?? "normal"]} ${hideText && logoWrapperHideOnMobile}`}>
+    <div className={`${logoWrapperColors[textColor ?? "black"]} ${logoWrapperSizes[size ?? "normal"]} ${hideText && logoWrapperHideOnMobile}`}>
       <svg
         className={`${hideText && logoSvgHideOnMobile}`}
         xmlns="http://www.w3.org/2000/svg"

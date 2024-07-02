@@ -1,5 +1,5 @@
-import { render, screen } from "@testing-library/react";
 import { LoginModal } from "@/components/LoginModal";
+import { render, screen } from "@testing-library/react";
 
 jest.mock("../src/styles/button.css", () => ({
   buttonStyles: {

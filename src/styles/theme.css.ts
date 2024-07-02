@@ -1,6 +1,6 @@
-import { createTheme } from "@vanilla-extract/css";
+import { createGlobalTheme } from "@vanilla-extract/css";
 
-export const [themeClass, vars] = createTheme({
+export const vars = createGlobalTheme(":root", {
   grid: {
     container: "130rem",
     gutter: "3.2rem"
